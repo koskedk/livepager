@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=299dbcd3_002Dc9a3_002D4eca_002D87b5_002D0745d3e7395b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DbConnectorTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0B314FF7-4EBA-453E-A079-FBA0EE6CA957::net5.0::LivePager.Setup.Data.Tests.DbConnectorTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::8EA2A6CC-A7B9-4502-A0DF-0D56141AC804::net5.0::LivePager.Setup.Tests.CustomTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::6193E957-C721-429F-8B53-C85A1DCF861A::net5.0::LivePager.Setup.Tests.TestInitializer&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::8EA2A6CC-A7B9-4502-A0DF-0D56141AC804::net5.0::LivePager.Shared.Tests.CustomTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
