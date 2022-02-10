@@ -4,10 +4,13 @@ namespace LivePager
 {
     public class PageRange
     {
-        public long FirstPage { get; }
         public long Page  { get; }
+        public long FirstPage { get; }
+        public long PreviousPage => Page == FirstPage ? FirstPage : Page - 1;
         public long StartPage { get; }
         public long EndPage { get; }
+
+        public long NextPage => Page == LastPage ? LastPage : Page + 1;
         public long LastPage { get; private set; }
 
         public long TotalItems => (EndPage - StartPage) + 1;
@@ -27,7 +30,7 @@ namespace LivePager
         public  string Print()
         {
             var scb = new StringBuilder();
-            scb.AppendLine(PrintBetween());
+            scb.AppendLine(PrintSummary());
             scb.AppendLine($"Page {Page} of {LastPage} Items:{TotalItems}");
             for (long i = StartPage; i <= EndPage; i++)
             { scb.AppendLine($"  {i}| Record{i}");
@@ -41,9 +44,14 @@ namespace LivePager
             return $"BETWEEN {StartPage} AND {EndPage}";
         }
 
+        public  string PrintSummary()
+        {
+            return $"{FirstPage}|< {PreviousPage} << ({Page}) >> {NextPage} >|{LastPage}";
+        }
+
         public override string ToString()
         {
-            return $"{FirstPage}|Page {Page} of {LastPage} [{StartPage}]-[{EndPage}] |{LastPage}";
+            return PrintSummary();
         }
     }
 }
